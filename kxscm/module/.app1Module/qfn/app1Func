@@ -1,0 +1,8 @@
+// @fileOverview example.
+// @param nameValue {symbol} Name of the person in the table
+// @returns {string} A total value string summary...
+{[nameValue]
+    total: sum raze exec price by name from app1Data where name=nameValue;
+    : string[nameValue], " has spent ", string[total], " dollars this month";
+    
+    }
